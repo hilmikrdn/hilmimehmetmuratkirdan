@@ -33,7 +33,7 @@
                     <img src="../img/klavye.jpg" alt="Oyuncu Klavyesi" class="urun-resmi">
                     <h3>Oyuncu Klavyesi</h3>
                     <p>Mekanik hisli, RGB aydınlatmalı.</p>
-                    <a href="klavye-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <a href="klavye-detay.html">Ürün Detayı</a>
                     <button class="sepete-ekle-btn" onclick="sepeteEkle('Oyuncu Klavyesi')">Sepete Ekle</button>
                 </div>
                 
@@ -41,7 +41,7 @@
                     <img src="../img/mouse-kablosuz.jpg" alt="Kablosuz Mouse" class="urun-resmi">
                     <h3>Kablosuz Mouse</h3>
                     <p>Gecikmesiz bağlantı, uzun pil ömrü.</p>
-                    <a href="mouse-kablosuz-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <a href="mouse-kablosuz-detay.html">Ürün Detayı</a>
                     <button class="sepete-ekle-btn" onclick="sepeteEkle('Kablosuz Mouse')">Sepete Ekle</button>
                 </div>
                 
@@ -49,12 +49,25 @@
                     <img src="../img/monitor.jpg" alt="27 İnç Monitör" class="urun-resmi">
                     <h3>27" Monitör</h3>
                     <p>144Hz yenileme hızı, 1ms tepki süresi.</p>
-                    <a href="monitor-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <a href="monitor-detay.html">Ürün Detayı</a>
                     <button class="sepete-ekle-btn" onclick="sepeteEkle('27 İnç Monitör')">Sepete Ekle</button>
                 </div>
 
             </div>
         </section>
+
+        <section class="mini-oyun-alani">
+            <h2>Siber Şifre Kırıcı</h2>
+            <p>Sistemin belirlediği 1 ile 10 arasındaki gizli şifreyi bulabilir misin?</p>
+            
+            <div class="oyun-kontrolleri">
+                <input type="number" id="tahminInput" placeholder="1-10 arası sayı girin" min="1" max="10">
+                <button onclick="sifreDene()" class="oyun-btn">Şifreyi Dene</button>
+            </div>
+            
+            <p id="oyunSonucu"></p>
+        </section>
+
     </main>
 
     <footer>

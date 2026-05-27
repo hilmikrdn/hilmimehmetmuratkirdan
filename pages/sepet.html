@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teknoloji Sepeti - Alışveriş Sepetim</title>
+    <title>Teknoloji Sepeti - Sepetim</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-
     <header>
         <div class="logo">Teknoloji Sepeti</div>
         <nav>
@@ -20,47 +19,33 @@
     </header>
 
     <main>
-        <h2 style="color: #2c3e50; margin-bottom: 20px;">Alışveriş Sepetim</h2>
-        
+        <h2>Alışveriş Sepetim</h2>
         <div class="sepet-container">
-            
             <div class="sepet-item">
                 <div class="sepet-urun-bilgi">
                     <h4>Oyuncu Klavyesi</h4>
-                    <p style="color: #7f8c8d; font-size: 14px;">Adet: 1</p>
+                    <p class="sepet-adet">Adet: 1</p>
                 </div>
-                <div style="display: flex; align-items: center; gap: 20px;">
-                    <div class="sepet-fiyat">850 TL</div>
-                    <button class="sil-btn" onclick="alert('Ürün sepetten silindi (Demo)')">Sil</button>
+                <div class="sepet-islemler">
+                    <span class="sepet-fiyat">850 TL</span>
+                    <button class="sil-btn" onclick="alert('Silindi')">Sil</button>
                 </div>
             </div>
-
             <div class="sepet-item">
                 <div class="sepet-urun-bilgi">
-                    <h4>Rekabetçi Mouse - Pro Edition</h4>
-                    <p style="color: #7f8c8d; font-size: 14px;">Adet: 1</p>
+                    <h4>Rekabetçi Mouse</h4>
+                    <p class="sepet-adet">Adet: 1</p>
                 </div>
-                <div style="display: flex; align-items: center; gap: 20px;">
-                    <div class="sepet-fiyat">1.250 TL</div>
-                    <button class="sil-btn" onclick="alert('Ürün sepetten silindi (Demo)')">Sil</button>
+                <div class="sepet-islemler">
+                    <span class="sepet-fiyat">1.250 TL</span>
+                    <button class="sil-btn" onclick="alert('Silindi')">Sil</button>
                 </div>
             </div>
-
-            <div class="sepet-toplam">
-                Genel Toplam: 2.100 TL
-            </div>
-            
-            <button class="satin-al-btn" onclick="alert('Siparişiniz başarıyla alındı! Bizi tercih ettiğiniz için teşekkür ederiz.')">
-                Alışverişi Tamamla
-            </button>
-
+            <div class="sepet-toplam">Genel Toplam: 2.100 TL</div>
+            <button class="satin-al-btn" onclick="alert('Siparişiniz alındı!')">Alışverişi Tamamla</button>
         </div>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Teknoloji Sepeti. Tüm Hakları Saklıdır.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Teknoloji Sepeti. Tüm Hakları Saklıdır.</p></footer>
     <script src="../scripts/myscript.js"></script>
 </body>
 </html>
