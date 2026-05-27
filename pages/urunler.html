@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknoloji Sepeti - Tüm Ürünler</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Teknoloji Sepeti</div>
+        <nav>
+            <a href="anasayfa.html">Ana Sayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="sepet.html">Sepet <span id="sepet-sayaci">0</span></a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="../index.html">Giriş Sayfasına Dön</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="urun-vitrini">
+            <h2>Tüm Ürünlerimiz</h2>
+            <div class="flex-container">
+                
+                <div class="urun-kart">
+                    <img src="../img/klavye.jpg" alt="Oyuncu Klavyesi" class="urun-resmi">
+                    <h3>Oyuncu Klavyesi</h3>
+                    <p>Mekanik hisli, RGB aydınlatmalı.</p>
+                    <a href="klavye-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <button class="sepete-ekle-btn" onclick="sepeteEkle('Oyuncu Klavyesi')">Sepete Ekle</button>
+                </div>
+                
+                <div class="urun-kart">
+                    <img src="../img/mouse-pro.jpg" alt="Rekabetçi Mouse" class="urun-resmi">
+                    <h3>Rekabetçi Mouse</h3>
+                    <p>FPS oyunları için hassas sensör.</p>
+                    <a href="mouse-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <button class="sepete-ekle-btn" onclick="sepeteEkle('Rekabetçi Mouse')">Sepete Ekle</button>
+                </div>
+                
+                <div class="urun-kart">
+                    <img src="../img/gamepad.jpg" alt="Kablosuz Gamepad" class="urun-resmi">
+                    <h3>Kablosuz Gamepad</h3>
+                    <p>PC uyumlu, tam destekli kontrolcü.</p>
+                    <a href="gamepad-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <button class="sepete-ekle-btn" onclick="sepeteEkle('Kablosuz Gamepad')">Sepete Ekle</button>
+                </div>
+                
+                <div class="urun-kart">
+                    <img src="../img/adaptor.jpg" alt="Ağ Adaptörü" class="urun-resmi">
+                    <h3>Ağ Adaptörü</h3>
+                    <p>Yüksek hızlı bağlantılar için özel çipli.</p>
+                    <a href="adaptor-detay.html" style="display:block; margin-bottom:15px; color:#3498db; text-decoration:none; font-weight:bold;">Ürün Detayı</a>
+                    <button class="sepete-ekle-btn" onclick="sepeteEkle('Ağ Adaptörü')">Sepete Ekle</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknoloji Sepeti. Tüm Hakları Saklıdır.</p>
+    </footer>
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
